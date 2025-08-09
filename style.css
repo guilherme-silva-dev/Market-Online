@@ -250,3 +250,20 @@ header{
     text-decoration: none;
     list-style: none;
 }
+
+#footer{
+    background-color: #000000a6;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+}
+#copy{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin: 0;
+    margin:40px;
+}
+
