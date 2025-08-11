@@ -27,12 +27,14 @@ body{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    margin: 0px;
 
 }
 #icos{
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    margin: 0px;
     padding: 6px;
     margin-top: auto;
 }
