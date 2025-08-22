@@ -40,7 +40,7 @@ body{
 }
 header{
     background-color: #f8f9fa;
-    padding: 10px 20px;
+
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
     
@@ -51,21 +51,22 @@ header{
     margin: 0;
     padding: 0;
 }
-#icos li a{
-    text-decoration: none;
-    color: #333;
-}
+
 #icos li a{
     color: #fff;
     background-color: #ac5b36;
     border-radius: 20px;
     padding: 8px 16px;
-    
+     font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
 }
-#icos li a:hover{
-    transition: background 0.5s, color 0.1s;
-    background-color: #d6794e;
-    color: #fff;
+
+#icos li a:hover {
+  animation: pulse 0.5s;
+  background-color: #d6794e;
+  color: #fff;
+  transition: background 0.5s, color 0.1s;
 }
 #nav-bar{
     margin: 10px;
@@ -148,18 +149,29 @@ header{
 
 .product-item {
     background-color: #ffffff80;
-    padding: 20px;
+    padding: 10px;
     border: 4px solid #a15431;
+    padding: 4px;
+    padding-left: 14px;
+    padding-right: 14px;
+    height: 388px;
+}
+
+
+.product-image{
+    width: 200px;
+    height: 202px;
     
 }
+
 #product-list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
-    margin: 50px;
-
+    margin: 30px;
+    padding: 10pz;
 }
 .product-item:hover{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.199);
@@ -269,3 +281,30 @@ header{
     margin:40px;
 }
 
+@media screen and (max-width: 600px) {
+  #icos li a{
+    font-size: smaller;
+    text-decoration: none;
+    color: #ffffff;
+}
+#title-logo{
+    font-size: 18px;
+}
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(214, 121, 78, 0.7);
+  }
+  70% {
+    transform: scale(1.08);
+    box-shadow: 0 0 10px 5px rgba(214, 121, 78, 0.2);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(214, 121, 78, 0);
+  }
+
+}
